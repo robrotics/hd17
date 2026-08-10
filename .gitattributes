@@ -1,0 +1,12 @@
+# STEP is plain text but must stay LF everywhere, or the files churn between
+# platforms and diffs become unreadable.
+* text=auto
+*.step text eol=lf
+*.stp  text eol=lf
+
+# Containers and images — never line-ending convert these.
+*.3mf  binary
+*.zip  binary
+*.jpeg binary
+*.jpg  binary
+*.png  binary

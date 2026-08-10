@@ -1,0 +1,113 @@
+{
+  "$comment": "Source of truth for the HD17 bill of materials. The website fetches this file and renders the table, so edit it here and the site follows. Costs are pack prices at time of writing; per-unit cost is computed, not stored.",
+  "id": "hd17",
+  "name": "HD17",
+  "version": "1.0",
+  "revision": "RevA",
+  "updated": "2026-08-09",
+  "currency": "USD",
+
+  "affiliateDisclosure": "Links marked as affiliate are Amazon Associates links. If you buy through one, Robrotics earns a small commission at no extra cost to you. It costs you nothing and it doesn't change what we recommend — every part here is what we actually used.",
+
+  "items": [
+    {
+      "ref": 1,
+      "item": "Heat-set inserts",
+      "spec": "M3 brass heat-set inserts",
+      "qty": 12,
+      "packQty": 100,
+      "packCost": 9.99,
+      "link": "https://amzn.to/3TM9CD7",
+      "affiliate": true,
+      "note": "Exact length/OD isn't documented yet — check the linked pack against your printed parts"
+    },
+    {
+      "ref": 2,
+      "item": "M3 x 6 mm button head screws",
+      "spec": "Stainless steel, button head",
+      "qty": 8,
+      "packQty": 100,
+      "packCost": 7.69,
+      "link": "https://amzn.to/3TByyxf",
+      "affiliate": true
+    },
+    {
+      "ref": 3,
+      "item": "Ball bearing",
+      "spec": "30 x 42 x 7 mm (6806-2RS class)",
+      "qty": 1,
+      "packQty": 10,
+      "packCost": 16.39,
+      "link": "https://amzn.to/4wBeedb",
+      "affiliate": true,
+      "note": "Main output bearing"
+    },
+    {
+      "ref": 4,
+      "item": "Set screw",
+      "spec": "Grub screw — clamps the wave generator to the motor shaft",
+      "qty": 1,
+      "packQty": 50,
+      "packCost": 5.69,
+      "link": "https://amzn.to/4fVwCHe",
+      "affiliate": true,
+      "note": "Thread and length not documented yet — use what fits the wave generator boss"
+    },
+    {
+      "ref": 5,
+      "item": "Bearing balls",
+      "spec": "5 mm steel bearing balls",
+      "qty": 11,
+      "packQty": 200,
+      "packCost": 7.2,
+      "link": "https://amzn.to/4hjNvxF",
+      "affiliate": true,
+      "note": "Ride in the printed cage to form the wave generator bearing"
+    },
+    {
+      "ref": 6,
+      "item": "Super Lube grease",
+      "spec": "Synthetic PTFE grease for the wave generator and tooth mesh",
+      "qty": 1,
+      "packQty": null,
+      "packCost": null,
+      "link": "https://amzn.to/3S2qjJT",
+      "affiliate": true,
+      "note": "One tube lasts many builds, so it isn't counted in the per-unit cost"
+    }
+  ],
+
+  "supplied": [
+    {
+      "item": "NEMA 17 stepper motor",
+      "spec": "Tested with an OMC StepperOnline 17HE12-1204S — 42 x 42 x 30 mm, 26 N·cm, 1.2 A, 4-wire, 5 mm shaft, under closed-loop FOC control.",
+      "qty": 1,
+      "link": "https://www.omc-stepperonline.com/e-series-nema-17-bipolar-26ncm-36-82oz-in-1-2a-42x42x30mm-4-wires-w-1m-cable-connector-17he12-1204s"
+    },
+    {
+      "item": "M3 screws for the motor",
+      "spec": "4 off, to bolt the NEMA 17 to the interface plate",
+      "qty": 4,
+      "note": "Length not documented yet — measure against your printed interface"
+    }
+  ],
+
+  "consumables": [
+    {
+      "item": "PLA filament",
+      "note": "Everything except the flexspline. Bambu Lab PLA on a P1S was used for the tested units."
+    },
+    {
+      "item": "PETG filament",
+      "note": "Flexspline only — it needs PETG's fatigue resistance. PLA will crack."
+    }
+  ],
+
+  "openQuestions": [
+    "Price of the Super Lube tube, so it can be shown in the table",
+    "Insert/set-screw sizes",
+    "Screw count: 12 inserts vs 8 M3x6 + 4 motor screws",
+    "Backlash figure (measurement still in progress)",
+    "Assembled weight and outside dimensions"
+  ]
+}
