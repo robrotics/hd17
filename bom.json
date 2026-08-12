@@ -1,13 +1,13 @@
 {
-  "$comment": "Source of truth for the HD17 bill of materials. The website fetches this file and renders the table, so edit it here and the site follows. Costs are pack prices at time of writing; per-unit cost is computed, not stored.",
-  "id": "hd17",
-  "name": "HD17",
+  "$comment": "Source of truth for the HD20 bill of materials. The website fetches this file and renders the table, so edit it here and the site follows. Costs are pack prices at time of writing; per-unit cost is computed, not stored.",
+  "id": "hd20",
+  "name": "HD20",
   "version": "1.0",
   "revision": "RevA",
-  "updated": "2026-08-09",
+  "updated": "2026-08-11",
   "currency": "USD",
 
-  "affiliateDisclosure": "Links marked as affiliate are Amazon Associates links. If you buy through one, Robrotics earns a small commission at no extra cost to you. It costs you nothing and it doesn't change what we recommend — every part here is what we actually used.",
+  "affiliateDisclosure": "Links marked as affiliate are Amazon Associates links. If you buy through one, Robrotics earns a small commission at no extra cost to you. It costs you nothing and it doesn't change what we recommend, because every part here is what we actually used.",
 
   "items": [
     {
@@ -19,12 +19,12 @@
       "packCost": 9.99,
       "link": "https://amzn.to/3TM9CD7",
       "affiliate": true,
-      "note": "Exact length/OD isn't documented yet — check the linked pack against your printed parts"
+      "note": "8 for the drive screws and 4 for the motor screws. Exact length/OD isn't documented yet, so check the linked pack against your printed parts"
     },
     {
       "ref": 2,
-      "item": "M3 x 6 mm button head screws",
-      "spec": "Stainless steel, button head",
+      "item": "M3x0.5 x 6 mm button head screws",
+      "spec": "Stainless steel, button head, 8 per drive",
       "qty": 8,
       "packQty": 100,
       "packCost": 7.69,
@@ -45,13 +45,13 @@
     {
       "ref": 4,
       "item": "Set screw",
-      "spec": "Grub screw — clamps the wave generator to the motor shaft",
+      "spec": "Grub screw that clamps the wave generator to the motor shaft",
       "qty": 1,
       "packQty": 50,
       "packCost": 5.69,
       "link": "https://amzn.to/4fVwCHe",
       "affiliate": true,
-      "note": "Thread and length not documented yet — use what fits the wave generator boss"
+      "note": "Thread and length not documented yet, so use what fits the wave generator boss"
     },
     {
       "ref": 5,
@@ -80,7 +80,7 @@
   "supplied": [
     {
       "item": "NEMA 17 stepper motor",
-      "spec": "Tested with an OMC StepperOnline 17HE12-1204S — 42 x 42 x 30 mm, 26 N·cm, 1.2 A, 4-wire, 5 mm shaft, under closed-loop FOC control.",
+      "spec": "Tested with an OMC StepperOnline 17HE12-1204S: 42 x 42 x 30 mm, 26 N·cm, 1.2 A, 4-wire, 5 mm shaft, under closed-loop FOC control.",
       "qty": 1,
       "link": "https://www.omc-stepperonline.com/e-series-nema-17-bipolar-26ncm-36-82oz-in-1-2a-42x42x30mm-4-wires-w-1m-cable-connector-17he12-1204s"
     },
@@ -88,25 +88,24 @@
       "item": "M3 screws for the motor",
       "spec": "4 off, to bolt the NEMA 17 to the interface plate",
       "qty": 4,
-      "note": "Length not documented yet — measure against your printed interface"
+      "note": "Separate from the 8 M3x0.5 x 6 mm screws that hold the drive together. Length not documented yet, so measure against your printed interface"
     }
   ],
 
   "consumables": [
     {
       "item": "PLA filament",
-      "note": "Everything except the flexspline. Bambu Lab PLA on a P1S was used for the tested units."
+      "note": "Everything except the flexspline, including both shear pins and the MJF-variant cage and wave generator if you use them. Bambu Lab PLA on a P1S was used for the tested units."
     },
     {
       "item": "PETG filament",
-      "note": "Flexspline only — it needs PETG's fatigue resistance. PLA will crack."
+      "note": "Flexspline only. It needs PETG's fatigue resistance, and PLA will crack."
     }
   ],
 
   "openQuestions": [
     "Price of the Super Lube tube, so it can be shown in the table",
     "Insert/set-screw sizes",
-    "Screw count: 12 inserts vs 8 M3x6 + 4 motor screws",
     "Backlash figure (measurement still in progress)",
     "Assembled weight and outside dimensions"
   ]
