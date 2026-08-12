@@ -143,15 +143,13 @@ be just the flexspline, and you print the other two from the MJF set at home.
 > exactly where you don't want extra material on a part this dimensionally
 > fussy.
 
-MJF files live in `cad/step/mjf/` and `cad/3mf/mjf/`.
+MJF files live in `cad/step/mjf/`.
 
 ## Files
 
 ```
 cad/step/          STEP, for CAD work and remixing
 cad/step/mjf/      STEP, MJF nylon matched set
-cad/3mf/           3MF, ready to slice
-cad/3mf/mjf/       3MF, MJF nylon matched set
 docs/              Load-cell torque test report
 photos/            Build photos
 bom.json           Bill of materials (source of truth)
