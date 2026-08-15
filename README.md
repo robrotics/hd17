@@ -120,36 +120,10 @@ PETG for the flexspline), using:
 
 No custom temperatures, no special bed prep.
 
-### The MJF option
-
-There's also a Multi Jet Fusion nylon variant of the flexspline, printed
-through **PCBWay**. Nylon has far better fatigue life than PETG, so it should
-last considerably longer. Ours cost **$24.89 for five pieces**, about $4.98
-each, before tax, shipping and any import duty, which on a small order can
-easily cost more than the parts themselves.
-
-> ⚠️ **The MJF variant is a matched set of three parts:** flexspline, cage,
-> *and* wave generator. All three have different geometry from the standard
-> versions, so use them together. Mixing an MJF flexspline with the standard
-> cage and wave generator will not fit correctly.
-
-Only the **flexspline** actually has to be made in nylon MJF, because that's the
-part fighting fatigue. The MJF cage and wave generator have their own geometry,
-but you can still print them yourself in **PLA**. So a service bureau order can
-be just the flexspline, and you print the other two from the MJF set at home.
-
-> **If you order from PCBWay, ask for the parts unpainted.** Dyeing or painting
-> adds cost and puts a coating on the tooth flanks and the bore, which is
-> exactly where you don't want extra material on a part this dimensionally
-> fussy.
-
-MJF files live in `cad/step/mjf/`.
-
 ## Files
 
 ```
 cad/step/          STEP, for CAD work and remixing
-cad/step/mjf/      STEP, MJF nylon matched set
 docs/              Load-cell torque test report
 photos/            Build photos
 bom.json           Bill of materials (source of truth)

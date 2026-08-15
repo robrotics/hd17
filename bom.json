@@ -95,7 +95,7 @@
   "consumables": [
     {
       "item": "PLA filament",
-      "note": "Everything except the flexspline, including both shear pins and the MJF-variant cage and wave generator if you use them. Bambu Lab PLA on a P1S was used for the tested units."
+      "note": "Everything except the flexspline, including both shear pins. Bambu Lab PLA on a P1S was used for the tested units."
     },
     {
       "item": "PETG filament",
